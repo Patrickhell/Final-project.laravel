@@ -1,0 +1,108 @@
+@use '../partials/variables.scss' as *;
+
+.bd_dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.bd_dashboard-msg-section,
+.bd_dashboard-rvws-section,
+.bd_dashboard-stat-1,
+.bd_dashboard-stat-2,
+.bd_dashboard-stat-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.bd_dashboard-stat-1 {
+    /* From https://css.glass */
+    background: rgba(110, 36, 180, 0.9);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(110, 36, 180, 1);
+}
+
+.bd_dashboard-stat-2 {
+    background-color: $primary-color;
+}
+
+.bd_dashboard-stat-3 {
+    /* From https://css.glass */
+    background: rgba(170, 9, 170, 0.902);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(168, 9, 168, 1);
+}
+
+@media screen and (min-width: 1280px) {
+    .bd_dashboard-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .bd_dashboard-msg-section { grid-area: 1 / 1 / 4 / 4; }
+    .bd_dashboard-rvws-section { grid-area: 4 / 1 / 7 / 4; }
+    .bd_dashboard-stat-1 { grid-area: 1 / 4 / 3 / 6; }
+    .bd_dashboard-stat-2 { grid-area: 3 / 4 / 5 / 6; }
+    .bd_dashboard-stat-3 { grid-area: 5 / 4 / 7 / 6; }
+
+    .bd_dashboard-msg-section,
+    .bd_dashboard-rvws-section,
+    .bd_dashboard-stat-1,
+    .bd_dashboard-stat-2,
+    .bd_dashboard-stat-3 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 2rem;
+    }
+
+    .bd_dashboard-msg-section,
+    .bd_dashboard-rvws-section {
+        margin: 2rem 0 2rem 2rem;
+    }
+
+    .bd_dashboard-msg-section {
+        margin: 2rem 0 1rem 2rem;
+    }
+
+    .bd_dashboard-rvws-section {
+        margin: 1rem 0 2rem 2rem;
+    }
+
+    .bd_dashboard-stat-1 {
+        margin: 2rem 2rem 1rem 2rem;
+    }
+
+    .bd_dashboard-stat-2 {
+        margin: 1rem 2rem;
+    }
+
+    .bd_dashboard-stat-3 {
+        margin: 1rem 2rem 2rem 2rem;
+    }
+
+    .bd_dashboard-stat-1,
+    .bd_dashboard-stat-2,
+    .bd_dashboard-stat-3 {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.truncate-custom {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    max-width: 100%; /* This ensures that the content doesn't exceed the parent's width */
+}
