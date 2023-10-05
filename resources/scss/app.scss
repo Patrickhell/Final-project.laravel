@@ -1,0 +1,144 @@
+@use './partials/variables.scss' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    // outline: 1px solid red;
+}
+
+aside#sidebar {
+    /* From https://css.glass */
+    background: rgba(204, 243, 237, 0.79);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(204, 243, 237, 0.46);
+}
+
+nav#mobilebar {
+    /* From https://css.glass */
+    background: rgba(204, 243, 237, 0.79);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(204, 243, 237, 0.46);
+}
+
+.bd_overlay-img {
+    background: rgb(0, 195, 165);
+    background: linear-gradient(45deg, rgb(0, 195, 165) 40%, rgb(168, 242, 231) 100%);
+}
+
+/* div#stats{
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(204, 243, 237, 0.46);
+    height: 90vh;
+    
+} */
+
+
+
+div.mycard-stats{
+
+    /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(8px);
+border: 1px solid rgba(255, 255, 255, 0.46);
+    
+
+}
+
+
+img#imgstats{
+    height:161px;
+    width: 100%;
+    
+}
+
+
+    .barcontainer {
+        position: relative;
+        
+        border-radius: 5px 5px 0 0;
+        width: 80%;
+        margin: 0 auto;
+        min-height: 25vw;
+        max-height: 50vw;
+        min-width: 40%;
+        max-width: 60%;
+        z-index: 1;
+
+
+      }
+      
+     /* .barcontainerheader {
+        display: inline;
+        position: absolute;
+        width: 100%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 1.5em;
+        z-index: 0;
+      } */
+      
+      .bar {
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        border: 1px solid black;
+        border-radius: 6px 6px 0 0;
+        background: #d0fff8;
+        
+        
+        width: 10%;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 0 black;
+        box-shadow: 4px 0 8px #888;
+      }
+      
+      .barlabel {
+        position: absolute;
+        border-top: 2px solid black;
+        bottom: 0;
+        width: 100%;
+        text-shadow: 1px 1px 0px black;
+        color: white;
+      }
+      
+      .bar:nth-child(2) {
+        left: 5%;
+      }
+      
+      .bar:nth-child(3) {
+        left: 20%;
+      }
+      
+      .bar:nth-child(4) {
+        left: 35%;
+      }
+      
+      .bar:nth-child(5) {
+        left: 50%;
+      }
+      
+      .bar:nth-child(6) {
+        left: 65%;
+      }
+      
+      .bar:nth-child(7) {
+        left: 80%;
+      }
+

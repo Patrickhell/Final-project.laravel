@@ -1,0 +1,60 @@
+/* styles.scss */
+
+/* Stile di base per il corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Stile per la barra laterale */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+/* Stile per il contenuto principale */
+.main {
+    margin-left: 250px; /* Larghezza della barra laterale */
+    padding: 20px;
+}
+
+/* Stile per l'intestazione della pagina */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Stile per il paragrafo di benvenuto */
+p {
+    font-size: 16px;
+}
+
+/* Aggiungi stili specifici per altre sezioni se necessario */
